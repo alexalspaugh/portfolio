@@ -25,7 +25,7 @@ content {
   max-width: 612px;
 }
 
-links {
+.links {
   display: flex;
   gap: 32px;
   flex-direction: column;
