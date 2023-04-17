@@ -20,6 +20,11 @@ body {
 
 a {
   color: #FFEECC;
+  transition: color 0.2s ease-out;
+}
+
+a:hover {
+  color: #FFC24D;
 }
 
 content {
