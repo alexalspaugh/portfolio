@@ -33,7 +33,7 @@ content {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 612px;
+  max-width: 590px;
 }
 
 .links {
