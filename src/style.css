@@ -26,7 +26,6 @@ a {
 }
 
 a:hover {
-  color: #676767;
   text-decoration: underline;
 }
 
@@ -72,9 +71,6 @@ content {
     transition: color 0.2s ease-out;
   }
 
-  a:hover {
-    color: #FFF;
-  }
 
 }
 
