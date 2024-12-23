@@ -45,14 +45,14 @@ content {
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 28px;
     height: 100%;
   }
 
   .links {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 28px;
     gap: 16px;
     flex-wrap: wrap;
   }
