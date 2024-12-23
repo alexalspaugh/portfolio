@@ -1,14 +1,14 @@
 
 
 @font-face {
-  font-family: 'Times New Roman', Times, serif;
-  src: url(./assets/Times.woff2);
+  font-family: Time, 'Times New Roman', Times, serif;
+  src: url(./assets/Time.woff2);
 }
 
 body {
   background-color: #2C231B;
   color: #FFEECC;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Time, 'Times New Roman', Times, serif;
   font-size: 24px;
   line-height: 34px;
   display: flex;
