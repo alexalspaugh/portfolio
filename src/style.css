@@ -44,6 +44,11 @@ content {
   line-height: 32px;
 }
 
+::selection {
+  background-color: transparent;
+  color: #F53100;
+}
+
 @media screen and (max-width: 600px) {
   body {
     font-size: 22px;
