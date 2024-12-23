@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Time';
-  src: url(./assets/Time.woff2) format('woff2');
+  src: url('./assets/Times.woff2') format('woff2');
 }
 
 body {
