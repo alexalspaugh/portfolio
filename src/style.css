@@ -48,8 +48,8 @@ content {
 
 .links a::after {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>');
-  margin-left: 2px;
-  vertical-align: middle;
+  margin-left: 2px; /* Space between text and arrow */
+  vertical-align: middle; /* Align arrow with text */
 }
 
 @media screen and (max-width: 600px) {
