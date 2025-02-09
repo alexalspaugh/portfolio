@@ -1,47 +1,149 @@
 
 
 @font-face {
-  font-family: 'Time';
-  src: url('./assets/Times.woff2') format('woff2');
+  font-family: 'ABCMarist';
+  src: url('./assets/ABCMarist.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SimplonMono';
+  src: url('./assets/SimplonMono.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #F4F0EF;
-  color: #000;
-  font-family: 'Time', 'Times New Roman', Times, serif;
-  font-size: 24px;
-  line-height: 32px;
+  background-color: #ffffff;
+  color: #4D4D4D;
+  font-family: 'ABCMarist', 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 24px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
-  padding: 16px;
+  height: 100%;
+  margin-top: 160px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px
+}
+
+.name {
+  color: #000000;
 }
 
 a {
-  color: #000;
-  transition: color 0.2s ease-out;
+  color: #4D4D4D;
   text-decoration: none;
+}
+
+.namewrap {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0px;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #000000;
 }
 
 content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 590px;
+  max-width: 604px;
+  padding: 20px 20px 64px 20px;
+  gap: 64px;
 }
 
 .links {
+  font-family: 'SimplonMono', monospace;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
   display: flex;
-  gap: 20px;
-  font-size: 24px;
-  line-height: 32px;
+  gap: 8px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectMedia {
+  position: relative;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.iPhoneWrap {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.iPhoneFrame {
+  width: 300px;
+  z-index: 1;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12.66666667%;
+  width: 100%; /* Make the video take the full width of the iPhoneFrame */
+  max-width: 300px; /* Ensure it doesn't exceed the iPhoneFrame's width */
+  object-fit: cover; /* Maintain aspect ratio */
+  padding: 8.33333333%; /* Add padding to the video */
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.projectDates {
+  font-family: 'SimplonMono', monospace;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+}
+
+.projectTitle {
+  color: #000000;
+}
+
+.titleLink {
+  color: #000000;
+}
+
+.bottom {
+  justify-content: center;
 }
 
 ::selection {
@@ -51,29 +153,40 @@ content {
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 22px;
-    line-height: 28px;
     height: 100%;
-  }
-
-  .links {
-    font-size: 22px;
-    line-height: 28px;
-    gap: 16px;
-    flex-wrap: wrap;
+    margin-top: 56px;
   }
 }
 
 /* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
   body {
-      background-color: #0D0D0D;
-      color: #CCCCCC;
+      background-color: #000000;
+      color: #999999;
+  }
+
+  .name {
+    color: #ffffff;
   }
 
   a {
-    color: #CCC;
-    transition: color 0.2s ease-out;
+    color: #999999;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+
+  .projectMedia {
+    background-color: #141414;
+  }
+
+  .projectTitle {
+    color: #ffffff;
+  }
+
+  .titleLink {
+    color: #ffffff;
   }
 
 
