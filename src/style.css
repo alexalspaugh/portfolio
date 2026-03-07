@@ -120,6 +120,11 @@ content {
   padding: 8.33333333%; /* Add padding to the video */
 }
 
+.video--air {
+  border-radius: 11.13%;
+  padding: 5.33333333% 4.45652174%;
+}
+
 .projectInfo {
   display: flex;
   flex-direction: column;
